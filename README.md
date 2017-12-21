@@ -8,7 +8,7 @@ A customizable viewport manager
 import ViewportManager from 'some/dir/viewport-manager';
 
 // declare sizes
-const sizes = {
+const breakpoints = {
   mobile: {
     max: 768,
   },
@@ -21,8 +21,10 @@ const sizes = {
   },
 };
 
-// export an instance of the viewport manager.
-export default new ViewportManager({ sizes });
+const delay = 0; // if 0 no delay will be called
+
+// export an instance of the viewport manager and we set some options.
+export default new ViewportManager({ sizes, delay });
 
 ```
 
@@ -31,10 +33,20 @@ export default new ViewportManager({ sizes });
 // include the instance declared in the previous file.
 import Viewport from 'viewport';
 
-// use it somewhere
-window.addEventListener('resize', () => {
-  const viewport = Viewport.get();
+class Foo extends React.Component {
+  // the listener
+  handleLog(viewport) {
+    console.log(`the viewport is ${viewport}`);
+  }
 
-  console.log(viewport);
-})
+  // on mount
+  componentDidMount() {
+    Viewport.listen(this.handleLog)
+  }
+
+  // on did mount
+  componentWillUnmount() {
+    Viewport.unlisten(this.handleLogfn)
+  }
+}
 ```
