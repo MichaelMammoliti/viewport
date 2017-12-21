@@ -21,7 +21,7 @@ const breakpoints = {
   },
 };
 
-const delay = 0; // if 0 no delay will be called
+const delay = 0; // if delay !== 0 we will debounce the call.
 
 // export an instance of the viewport manager and we set some options.
 export default new ViewportManager({ breakpoints, delay });
