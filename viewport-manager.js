@@ -80,6 +80,11 @@ class ViewportManager {
 
     this.listenerCollection.splice(index, 0);
   }
+
+  // shortcuts
+  get() {
+    return this.getViewport();
+  }
 }
 
 export default ViewportManager;
