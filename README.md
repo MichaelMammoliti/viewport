@@ -34,11 +34,6 @@ export default new ViewportManager({ sizes, delay });
 import Viewport from 'viewport';
 
 class Foo extends React.Component {
-  // the listener
-  handleLog(viewport) {
-    console.log(`the viewport is ${viewport}`);
-  }
-
   // on mount
   componentDidMount() {
     Viewport.listen(this.handleLog)
@@ -46,7 +41,12 @@ class Foo extends React.Component {
 
   // on did mount
   componentWillUnmount() {
-    Viewport.unlisten(this.handleLogfn)
+    Viewport.unlisten(this.handleLog)
+  }
+  
+  // the listener
+  handleLog(viewport) {
+    console.log(`the viewport is ${viewport}`);
   }
 }
 ```
