@@ -2,10 +2,10 @@
 A customizable viewport manager
 
 # Initiate
+in `app/viewport-manage.js`
 ```
-// in viewport.js
-// Initilize the viewport.
-import ViewportManager from 'some/dir/viewport-manager';
+// Import the module.
+import ViewportManager from 'viewport-manager';
 
 // declare sizes
 const breakpoints = {
