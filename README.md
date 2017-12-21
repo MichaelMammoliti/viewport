@@ -31,7 +31,7 @@ export default new ViewportManager({ sizes, delay });
 # Use it
 ```
 // include the instance declared in the previous file.
-import Viewport from 'viewport';
+import ViewportManager from 'app/viewport-manager';
 
 class Foo extends React.Component {
   // on mount
