@@ -36,19 +36,27 @@ in `app/components/Foo`
 import ViewportManager from 'app/viewport-manager';
 
 class Foo extends React.Component {
-  // on mount
+  
+  [...]
+  
   componentDidMount() {
     Viewport.listen(this.handleLog)
   }
 
-  // on did mount
   componentWillUnmount() {
     Viewport.unlisten(this.handleLog)
   }
   
-  // the listener
   handleLog(viewport) {
     console.log(`the viewport is ${viewport}`);
+     
+    // we trigger a render only for this component
+    this.setState({
+      viewport,
+    });
   }
+  
+  [...]
+  
 }
 ```
