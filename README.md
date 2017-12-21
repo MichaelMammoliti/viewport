@@ -29,6 +29,8 @@ export default new ViewportManager({ sizes, delay });
 ```
 
 # Use it
+in `app/components/Foo`
+
 ```
 // include the instance declared in the previous file.
 import ViewportManager from 'app/viewport-manager';
