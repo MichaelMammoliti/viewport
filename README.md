@@ -4,7 +4,7 @@ A customizable viewport manager
 # Initiate
 ```
 // in viewport.js
-// 1. Initilize the viewport.
+// Initilize the viewport.
 import ViewportManager from 'some/dir/viewport-manager';
 
 // declare sizes
