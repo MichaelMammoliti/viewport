@@ -87,4 +87,4 @@ class ViewportManager {
   }
 }
 
-export default ViewportManager;
+module.exports = ViewportManager;
