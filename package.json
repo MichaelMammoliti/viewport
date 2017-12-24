@@ -1,0 +1,24 @@
+{
+  "name": "viewport-manager",
+  "version": "1.0.1",
+  "description": "A viewport manager for responsive front end apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelMammoliti/viewport-manager.git"
+  },
+  "keywords": [
+    "viewport-manager",
+    "viewport",
+    "manager"
+  ],
+  "author": "Michael Mammoliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelMammoliti/viewport-manager/issues"
+  },
+  "homepage": "https://github.com/MichaelMammoliti/viewport-manager#readme"
+}
