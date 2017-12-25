@@ -67,12 +67,14 @@ class Foo extends React.Component {
 ```
 
 # Options
-type: `object`
+type: `object`.
+
 To configure your `viewport-manager` you can pass options when you create an instance.
 ```const new ViewportManager(options)```
 
-##### options.breakpoints
-type: `object`
+#### options.breakpoints
+type: `object`.
+
 `breakpoints` should be an object with all your breakpoints rules. Let's have a look to an example:
 
 ```
@@ -92,22 +94,24 @@ const breakpoints = {
     min: 1024
     // max will automatically be 10000
   }
-}
+};
 ```
 
-##### options.delay
+#### options.delay
 type: `number`.
 if the value is true (different from 0), then all methods will have a delay of `delay` milliseconds.
 ```const new ViewportManager({ breakpoints, delay: 100 })```
 
 # Api
-##### Instance.listen(fn)
+#### Instance.listen(fn)
 type: `function`.
+
 `listen()` requires one parameter, the function to be called when the viewport changes. This methos adds the function inside a global array of callbacks.
 
-##### Instance.unlisten(fn)
+#### Instance.unlisten(fn)
 type: `function`.
+
 `unlisten()` requires one parameter the function previously passed in the `listen()` method. This will remove the callback from the collection and it will not be called anymore.
 
-##### Instance.get()
+#### Instance.get()
 returns the current viewport. Use this method before the component mounts.
