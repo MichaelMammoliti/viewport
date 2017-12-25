@@ -1,10 +1,11 @@
 {
   "name": "viewport-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A viewport manager for responsive front end apps.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -o dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/MichaelMammoliti/viewport-manager/issues"
   },
-  "homepage": "https://github.com/MichaelMammoliti/viewport-manager#readme"
+  "homepage": "https://github.com/MichaelMammoliti/viewport-manager#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1"
+  }
 }

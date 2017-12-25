@@ -1,1 +1,1 @@
-module.exports = require('./src/viewport-manager');
+module.exports = require('./dist/index.js');
