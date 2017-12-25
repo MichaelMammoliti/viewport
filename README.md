@@ -2,7 +2,7 @@
 `viewport-manager` is a lighweight and customizable viewport manager that helps you with you `resize` events. It creates a collection of callbacks to be called only when the viewport really changes.
 
 ## Why
-Sometimes we don't want to show a module at a specific viewport only. Yes, we can do it via CSS using `@media` and `display: none`; But let's say that when that component mounts it fires async functions or dispatches actions. We would like to prevent this and that's where viewport-manager comes in handy.
+Sometimes we don't want to show a module at a specific viewport only. Yes, we can do it via CSS using `@media` and `display: none`; But let's say that when that component mounts it fires async functions or dispatches actions. We would like to prevent this and that's where `viewport-manager` comes in handy.
 
 ## Install
 ```npm i --save viewport-manager```
@@ -70,7 +70,10 @@ class Foo extends React.Component {
 type: `object`.
 
 To configure your `viewport-manager` you can pass options when you create an instance.
-```const new ViewportManager(options)```
+
+```
+const ViewportManagerInstance = new ViewportManager(options);
+```
 
 #### options.breakpoints
 type: `object`.
