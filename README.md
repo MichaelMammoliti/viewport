@@ -1,13 +1,13 @@
 # Viewport Manager
 `viewport-manager` is a lighweight and customizable viewport manager that helps you with you `resize` events. It creates a collection of callbacks to be called only when the viewport really changes.
 
-# Why
-Sometimes we don't want to show a module at a specific viewport only. Yes, we can do it via CSS using `@media` and `display: none`; But let's say that when that component mounts it fires async functions or dispatches actions. We would like to prevent this and that's where viewport-manager comes in handy.
+## Why
+Sometimes we don't want to show a module at a specific viewport only. Yes, we can do it via CSS using `@media` and `display: none`; But let's say that when that component mounts it fires async functions or dispatches actions. We would like to prevent this and that's where `viewport-manager` comes in handy.
 
 ## Install
 ```npm i --save viewport-manager```
 
-# Initiate
+## Initiate
 in: `app/viewport-manager.js`
 
 ```
@@ -35,7 +35,7 @@ export default new ViewportManager({ breakpoints, delay });
 
 ```
 
-# Use it
+## Use it
 We want to import the instance created and configured before. In this example I'm using React.
 
 in `app/components/Foo/foo.jsx`:
@@ -66,11 +66,14 @@ class Foo extends React.Component {
 }
 ```
 
-# Options
+## Options
 type: `object`.
 
 To configure your `viewport-manager` you can pass options when you create an instance.
-```const new ViewportManager(options)```
+
+```
+const ViewportManagerInstance = new ViewportManager(options);
+```
 
 #### options.breakpoints
 type: `object`.
