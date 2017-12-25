@@ -1,5 +1,5 @@
 # Viewport Manager
-`viewport-manager` is a lighweight and customizable viewport manager that helps you with you `resize` events. It creates a collection of callbacks to be called only when the viewport really changes.
+`viewport-manager` is a lighweight and customizable viewport manager that helps you with the window `resize` event. Behind the scenes it creates a collection of callbacks to be called on viewport change.
 
 ## Why
 Sometimes we don't want to show a module at a specific viewport only. Yes, we can do it via CSS using `@media` and `display: none`; But let's say that when that component mounts it fires async functions or dispatches actions. We would like to prevent this and that's where `viewport-manager` comes in handy.
