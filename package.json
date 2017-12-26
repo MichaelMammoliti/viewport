@@ -1,6 +1,6 @@
 {
   "name": "viewport-manager",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A viewport manager for responsive front end apps.",
   "main": "dist/index.js",
   "scripts": {
